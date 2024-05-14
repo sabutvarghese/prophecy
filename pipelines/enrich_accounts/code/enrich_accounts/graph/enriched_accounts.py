@@ -10,4 +10,4 @@ def enriched_accounts(spark: SparkSession, by_id_left_outer: DataFrame):
     by_id_left_outer.write\
         .format("delta")\
         .mode("overwrite")\
-        .saveAsTable("`hive_metastore`.`rainforest_silver`.`enriched_accounts_demo2`")
+        .saveAsTable("`hive_metastore`.`bookstore_eng_pro`.`enriched_accounts_demo2`")
